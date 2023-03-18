@@ -281,7 +281,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <p className="break-all text-red-500 font-bold text-center p-5 my-7">
+        <p className="break-all text-red-500 font-bold text-center p-5 mt-7">
           <span className="text-xl ">Contract Address</span>
           <br />
           <br />
