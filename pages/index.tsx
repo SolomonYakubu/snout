@@ -514,7 +514,7 @@ const Home: NextPage = () => {
           // style={{ backgroundImage: "url('images/background.webp')" }}
         >
           <Fade>
-            <h3 className="text-center text-4xl md:text-6xl mb-12  w-fit p-1 font-extrabold  text-red-500">
+            <h3 className="text-center text-5xl md:text-7xl mb-12  w-fit p-1 font-extrabold  text-red-500">
               Roadmap
             </h3>
           </Fade>
