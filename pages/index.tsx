@@ -59,7 +59,7 @@ const Home: NextPage = () => {
     ["About", null],
 
     ["Tokenomics", null],
-    // ["Roadmap", null],
+    ["Roadmap", null],
     ["Uniswap", "https://app.uniswap.org"],
     ["Dextools", "https://dextools.io"],
   ];

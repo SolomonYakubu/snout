@@ -20,6 +20,8 @@ export default function Header() {
     ["About", null],
 
     ["Tokenomics", null],
+    ["Roadmap", null],
+
     ["Dextools", "https://dextools.io"],
   ];
 
