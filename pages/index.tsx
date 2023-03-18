@@ -67,42 +67,39 @@ const Home: NextPage = () => {
     {
       title: "PHASE 1",
       desc: [
-        "Snout Launch",
-        "Snout Website",
-        "Snout DApps",
-        "Snout advantage  bot release",
-        "Initial White paper",
-        "Snout Staking Dapp",
+        " Contract Deployment",
+        "Liquidity Acquisition",
+        "Website Live",
+        "Dextools Update",
+        "$SNOUT Detective bot",
+        "First Buybacks Initiated",
+        "Litepaper Release",
+        "Launch Marketing",
       ],
     },
     {
       title: "PHASE 2",
 
       desc: [
-        "Team Expansion",
-        "First CEX Listing",
-        "First Partnership",
-        "Snout Marketplace",
+        "Staking Dapp",
+        "CG and CMC Applied",
+        "Hot Wallet tracker Dapp",
+        "Blog posts pushed",
+        "NFT Release ",
+        " Marketing Push",
+        "First AMA with Team",
+        "Billboards (Vegas, NY)",
+        "CEX",
       ],
     },
     {
       title: "PHASE 3",
 
       desc: [
-        "CertiK Contract Audit ",
-        "Whitepaper v2 Release",
-        "Snout NFT Collection Initial Launch",
-        "Snout Billboards",
-      ],
-    },
-    {
-      title: "PHASE 4",
-
-      desc: [
-        "Business Partnerships",
-        "Snout Merch Launch",
-        "Marketing Campaign",
-        "P2E Game Development",
+        "Partnerships",
+        "Huge Marketing Campaign",
+        "Trending",
+        "Influencer module Application",
       ],
     },
   ];
@@ -160,6 +157,20 @@ const Home: NextPage = () => {
 
       desc: "4% fees directly goes to marketing to support the token in a long run.",
       icon: <BsShopWindow size={40} />,
+    },
+  ];
+  const features = [
+    {
+      title: "$SNOUT Detective bot",
+    },
+    {
+      title: "$SNOUT Dapp's",
+    },
+    {
+      title: "Staking ",
+    },
+    {
+      title: "NFT'S",
     },
   ];
   const buy = [
@@ -272,7 +283,7 @@ const Home: NextPage = () => {
           id="About"
           // style={{ backgroundImage: "url('images/background2.gif')" }}
         >
-          <div className="flex flex-col md:flex-row-reverse items-center md:px-12 justify-center relative  md:gap-10">
+          <div className="flex flex-col  items-center md:px-12 justify-center relative  md:gap-10">
             {/* <Zoom>
               <div className="w-full md:w-2/5 ">
                 <ExportedImage
@@ -295,11 +306,29 @@ const Home: NextPage = () => {
               <div className="flex flex-col items-center  py-5 md:w-1/2  transition-all duration-500 h-full md:hover:border-none">
                 <h4 className=" md:text-2xl text-center   text-xl font-bold text-red-500 ">
                   <br />
-                  {`Introducing Snout, the revolutionary new crypto token that takes inspiration from man's best friend - the dog! Just like a dog's snout, Snout is designed to be a powerful tool that helps you sniff out opportunities in the world of crypto.  Just like a dog's nose can detect even the faintest scents, Snout uses sophisticated algorithms to identify promising investment opportunities and help you make informed decisions about where to invest your money.`}
+                  {`A complete decentralized token.The $SNOUT is the most sensitive part of a dog.We are devoted to analyse safe projects and hot tracked wallets 
+#SNOUT is going to be a key player in the crypto space developing multiply utility's `}
                   <br />
                 </h4>
               </div>
             </Zoom>
+            <h3 className="text-center text-3xl md:text-5xl mt-7  w-fit p-1 font-extrabold  text-red-500  font-[Montserrat]">
+              Features
+            </h3>
+
+            <div className="flex flex-col md:flex-row   justify-center w-full items-center gap-5 md:gap-6 my-5 ">
+              {features.map((item, index) => (
+                <Zoom key={index}>
+                  <div className="p-1 bg-gradient-to-t w-full  from-primary to-secondary rounded-lg">
+                    <div className="group px-8   h-fit  flex flex-col justify-center items-center bg-bg1 bg-opacity-95 rounded-lg">
+                      <h3 className=" font-[Montserrat]  z-10 text-xl  font-extrabold my-3 text-center border-gray-300 text-red-500 self-center ">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                </Zoom>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -357,7 +386,9 @@ const Home: NextPage = () => {
                 ))}
               </div>
               <button
-                onClick={() => (window.location.href = "https://t.me")}
+                onClick={() =>
+                  (window.location.href = "https://t.me/SnoutToken")
+                }
                 className="flex items-center my-5 justify-between gap-3 animate-pulse font-[Montserrat] font-extrabold text-xl bg-gradient-to-tr from-primary to-secondary hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none   "
               >
                 Join Telegram <TbBrandTelegram size={30} />
@@ -478,6 +509,43 @@ const Home: NextPage = () => {
           </div>
         </section> */}
         <section
+          className="p-6 md:p-12 py-12 w-full bg-bg2 flex flex-col items-center bg-cover bg-right md:bg-fixed"
+          id="Roadmap"
+          // style={{ backgroundImage: "url('images/background.webp')" }}
+        >
+          <Fade>
+            <h3 className="text-center text-4xl md:text-6xl mb-12  w-fit p-1 font-extrabold  text-red-500">
+              Roadmap
+            </h3>
+          </Fade>
+
+          <div className="flex flex-col md:flex-row justify-center w-full md:items-start items-start gap-5 md:gap-6  ">
+            {roadmap.map((item, index) => (
+              <Fade key={index}>
+                <div className="  group py-8 px-5 md:pb-12 w-full  md:h-80  flex flex-col items-center justify-center md:justify-start bg-opacity-60">
+                  <h3 className=" z-10   text-xl  font-extrabold my-3 text-center  w-fit text-red-500">
+                    {item.title}
+                  </h3>
+                  {/* <h3 className="font-[Poppins] z-10   text-3xl  font-extrabold my-3 text-center  text-white group-hover:text-white self-center">
+                    {item.sub}
+                  </h3> */}
+
+                  <div className=" text-sm  text-red-500 z-10">
+                    {item.desc.map((item, index) => (
+                      <div
+                        className="my-1 flex items-center justify-center text-center gap-1"
+                        key={index}
+                      >
+                        <span className=" w-[95%]">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Fade>
+            ))}
+          </div>
+        </section>
+        <section
           className="md:min-h-[calc(100vh-64px)] flex flex-col justify-center  pt-16 items-center p-6 md:p-12 md:py-40 w-full bg-[#020873] bg-opacity-5"
           id=""
           // style={{ backgroundImage: "url('images/background2.gif')" }}
@@ -510,7 +578,9 @@ const Home: NextPage = () => {
               <div className="flex flex-col items-center  py-5 w-full  transition-all duration-500 h-full md:hover:border-none">
                 <div className="flex flex-col md:flex-row  items-center justify-center w-full  gap-2 md:mb-0 my-3 md:my-0 md:mt-6">
                   <button
-                    onClick={() => (window.location.href = "https://t.me")}
+                    onClick={() =>
+                      (window.location.href = "https://t.me/SnoutToken")
+                    }
                     className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl bg-gradient-to-tr from-blue-400 to-blue-900 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none  "
                   >
                     Telegram <TbBrandTelegram size={30} />
@@ -518,7 +588,7 @@ const Home: NextPage = () => {
 
                   <button
                     onClick={() =>
-                      (window.location.href = "https://www.dextools.io")
+                      (window.location.href = "https://twitter.com/SNOUT_ERC20")
                     }
                     className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl  bg-gradient-to-r from-blue-300 to-green-400 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none"
                   >
@@ -578,13 +648,13 @@ const Home: NextPage = () => {
                   <p className="text-red-500 text-lg font-bold">Contact</p>
                   <a
                     className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
-                    href="https://t.me"
+                    href="https://t.me/SnoutToken"
                   >
                     Telegram
                   </a>
                   <a
                     className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
-                    href="https://twitter.com"
+                    href="https://twitter.com/SNOUT_ERC20"
                   >
                     Twitter
                   </a>

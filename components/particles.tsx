@@ -37,7 +37,7 @@ const ParticlesBg = () => {
             },
             onHover: {
               enable: true,
-              mode: "grab",
+              mode: "repulse",
             },
             resize: true,
           },
@@ -67,7 +67,7 @@ const ParticlesBg = () => {
             distance: 150,
             enable: true,
             opacity: 0.3,
-            width: 0.2,
+            width: 0,
           },
           collisions: {
             enable: false,
