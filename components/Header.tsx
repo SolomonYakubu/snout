@@ -18,9 +18,9 @@ export default function Header() {
     ["Home", null],
 
     ["About", null],
-    ["Partners", null],
+
     ["Tokenomics", null],
-    ["Roadmap", null],
+    ["Dextools", "https://dextools.io"],
   ];
 
   const sessionList = [

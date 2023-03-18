@@ -47,7 +47,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { BsShopWindow, BsCloudSunFill } from "react-icons/bs";
 import { MdPool, MdWaterfallChart, MdSwapVert } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
-import { TbBrandTelegram } from "react-icons/tb";
+import { TbBrandTelegram, TbBrandTwitter } from "react-icons/tb";
 import "react-vertical-timeline-component/style.min.css";
 
 const Home: NextPage = () => {
@@ -57,10 +57,11 @@ const Home: NextPage = () => {
     ["Home", null],
 
     ["About", null],
-    ["Partners", null],
+
     ["Tokenomics", null],
-    ["Roadmap", null],
-    ["Buy Now", "https://app.uniswap.org"],
+    // ["Roadmap", null],
+    ["Uniswap", "https://app.uniswap.org"],
+    ["Dextools", "https://dextools.io"],
   ];
   const roadmap = [
     {
@@ -364,40 +365,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section
-          className="bg-black bg-opacity-40 w-full flex flex-col md:flex-row flex-wrap justify-center items-center gap-10 py-5 "
-          id="Partners"
-        >
-          <Fade>
-            <h3 className="text-center w-full text-5xl md:text-7xl mb-7   p-1 font-extrabold  text-red-500  font-[Montserrat]">
-              Meet Our Partners
-            </h3>
-          </Fade>
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p1} alt="" layout="responsive" className="" />
-          </div>
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p3} alt="" layout="responsive" className="" />
-          </div>
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p4} alt="" layout="responsive" className="" />
-          </div>
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p5} alt="" layout="responsive" className="" />
-          </div>
-          {/* <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p6} alt="" layout="responsive" className="" />
-          </div> */}
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p7} alt="" layout="responsive" className="" />
-          </div>
-          {/* <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p8} alt="" layout="responsive" className="" />
-          </div> */}
-          <div className=" w-2/3 md:w-1/4   block">
-            <ExportedImage src={p10} alt="" layout="responsive" className="" />
-          </div>
-        </section>
+
         {/* <section
           className="px-6 md:px-20 py-16 md:py-24 w-full bg-inherit"
           id=""
@@ -431,7 +399,7 @@ const Home: NextPage = () => {
         >
           <Fade>
             <h3 className="text-center text-5xl md:text-7xl mb-7  w-fit p-1 font-extrabold  text-red-500  font-[Montserrat]">
-              Tokenomics
+              Token Info
             </h3>
           </Fade>
           <div className="md:flex flex-col items-center justify-center">
@@ -454,21 +422,11 @@ const Home: NextPage = () => {
               </div>
             </div> */}
             <div className="md:flex flex-col justify-center items-center">
-              <div className="flex  md:flex-row flex-wrap justify-center w-full items-center gap-5 md:gap-6 my-5 ">
+              <div className="flex flex-col   flex-wrap justify-center w-full items-center gap-5 md:gap-6 my-5 ">
                 {reward.map((item, index) => (
                   <Zoom key={index}>
-                    <div className="p-1 bg-gradient-to-t md:w-1/3 from-primary to-secondary rounded-lg">
-                      <div className="group p-8 md:py-12    flex flex-col justify-center items-center bg-bg1 bg-opacity-95 rounded-lg">
-                        <div className=" p-4  rounded-full  bg-bg2 bg-opacity-40 self-center text-red-500">
-                          {/* <ExportedImage
-                          src={logo2}
-                          alt="illustration"
-                          layout="responsive"
-                          className=" rounded-full  border-secondary border-2 border-solid animate-pulse"
-                        /> */}
-                          {item.icon}
-                        </div>
-
+                    <div className="p-1 bg-gradient-to-t w-full  from-primary to-secondary rounded-lg">
+                      <div className="group px-8   h-fit  flex flex-col justify-center items-center bg-bg1 bg-opacity-95 rounded-lg">
                         <h3 className=" font-[Montserrat]  z-10 text-xl  font-extrabold my-3 text-center border-gray-300 text-red-500 self-center ">
                           {item.title}
                         </h3>
@@ -519,97 +477,118 @@ const Home: NextPage = () => {
             ))}
           </div>
         </section> */}
-
-        <section className="  w-full bg-bg2 bg-opacity-40" id="">
-          <div className=" w-full py-10 px-6 md:px-48">
-            <div className="flex items-center">
-              <div className="block w-24">
+        <section
+          className="md:min-h-[calc(100vh-64px)] flex flex-col justify-center  pt-16 items-center p-6 md:p-12 md:py-40 w-full bg-[#020873] bg-opacity-5"
+          id=""
+          // style={{ backgroundImage: "url('images/background2.gif')" }}
+        >
+          <Fade>
+            <h3 className="text-center text-5xl md:text-7xl mb-7  w-fit p-1 font-extrabold  text-red-500  font-[Montserrat]">
+              Join the Snout Army
+            </h3>
+          </Fade>
+          <div className="flex flex-col items-center md:px-12 justify-center relative  md:gap-10">
+            <Zoom>
+              <div className="w-full md:w-full ">
                 <ExportedImage
-                  src={logo}
-                  alt="logo"
+                  src={about2}
+                  alt="illustration"
                   layout="responsive"
                   className=""
                 />
               </div>
+            </Zoom>
+            <div className="w-full  block opacity-30 absolute  z-0 ">
+              <ExportedImage
+                src={bg2}
+                alt="illustration"
+                layout="responsive"
+                className=" "
+              />
             </div>
-            <div className="flex flex-col md:flex-row items-center w-full md:gap-3 justify-around">
-              <div className="flex  flex-col items-start md:flex-row md:gap-10 md:justify-between">
-                <Fade>
-                  <h4 className=" md:text-base md:text-left md:w-1/2  text-xs  text-red-500 border-l-2 border-opacity-60 border-solid border-red-500 px-5">
-                    Crypto investing can be very unpredictable and comes with a
-                    considerable amount of risk. Therefore, it is crucial to
-                    perform thorough research and evaluate your financial
-                    circumstances and comfort level with risk prior to making
-                    any investment decisions.
-                  </h4>
-                </Fade>
-                <Fade>
-                  <ul className="  flex flex-col items-start justify-start ">
-                    {list.map(
-                      ([name, link], index) =>
-                        (link === null && (
-                          <Link
-                            className={`mt-2 pl-2 text-red-500 font-bold m-1 text-center pr-5   `}
-                            key={index}
-                            activeClass="none"
-                            to={`${name}`}
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            {name}
-                          </Link>
-                        )) || (
-                          <a
-                            className={`mt-2 pl-2 text-red-500 font-bold m-1 text-center pr-5`}
-                            key={index}
-                            href={`${link}`}
-                          >
-                            {name}
-                          </a>
-                        )
-                    )}
-                  </ul>
-                </Fade>
-              </div>
-            </div>
-            <div className="md:flex flex-row justify-between gap-10 items-center w-full">
-              <div className="p-1 bg-gradient-to-t md:w-1/2 from-primary to-secondary rounded-lg">
-                <div className="p-12 bg-bg1 bg-opacity-95 rounded-lg ">
-                  <h3 className="text-white text-lg">STAY INFORMED</h3>
-                  <p className="text-white py-2">
-                    Receive monthly news and insights in your inbox. Don&apos;t
-                    miss out!
-                  </p>
-                  <input
-                    type="text"
-                    placeholder="ENTER EMAIL ADDRESS"
-                    className=" bg-inherit placeholder:text-white text-white w-full p-3 outline-none border-b-2 "
-                  />
+            <Zoom>
+              <div className="flex flex-col items-center  py-5 w-full  transition-all duration-500 h-full md:hover:border-none">
+                <div className="flex flex-col md:flex-row  items-center justify-center w-full  gap-2 md:mb-0 my-3 md:my-0 md:mt-6">
                   <button
-                    className="text-xl z-10 hover:bg-gradient-to-bl w-fit  font-[Montserrat] bg-gradient-to-tr from-primary to-secondary text-white p-2 mt-5  rounded-lg mr-1 border-none  text-center transition-all duration-700 px-6"
-                    // href="https://www.youtube.com/watch?v=RPDG4NlIVF8&t=2s"
+                    onClick={() => (window.location.href = "https://t.me")}
+                    className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl bg-gradient-to-tr from-blue-400 to-blue-900 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none  "
                   >
-                    Subscribe
+                    Telegram <TbBrandTelegram size={30} />
+                  </button>
+
+                  <button
+                    onClick={() =>
+                      (window.location.href = "https://www.dextools.io")
+                    }
+                    className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl  bg-gradient-to-r from-blue-300 to-green-400 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none"
+                  >
+                    Twitter <TbBrandTwitter size={30} />
                   </button>
                 </div>
               </div>
-              <Fade top>
-                <div className="flex gap-3 my-3 justify-start items-center md:justify-start">
-                  <a
-                    href="https://t.me/Snout"
-                    className="bg-gradient-to-r from-primary to-secondary text-white p-3 bg-opacity-25 rounded-full"
-                  >
-                    <BsTelegram size={25} />
-                  </a>
-                  <a
-                    href="https://twitter.com/Snout"
-                    className="bg-gradient-to-r from-primary to-secondary text-white  p-3 bg-opacity-25 rounded-full"
-                  >
-                    <BsTwitter size={25} />
-                  </a>
+            </Zoom>
+          </div>
+        </section>
+
+        <section className="  w-full bg-bg2 bg-opacity-40" id="">
+          <div className=" w-full py-10 px-6 md:px-48">
+            <div className="flex flex-col md:flex-row items-start w-full md:gap-3 gap-4 justify-around">
+              <div className="flex items-center">
+                <div className="block w-24 md:w-48">
+                  <ExportedImage
+                    src={logo}
+                    alt="logo"
+                    layout="responsive"
+                    className=""
+                  />
                 </div>
+              </div>
+              <Fade>
+                <ul className="  flex flex-col items-start justify-start ">
+                  <p className="text-red-500 text-lg font-bold">Links</p>
+                  {list.map(
+                    ([name, link], index) =>
+                      (link === null && (
+                        <Link
+                          className={`mt-2 pl-2 text-white  m-1 text-center pr-5   `}
+                          key={index}
+                          activeClass="none"
+                          to={`${name}`}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          {name}
+                        </Link>
+                      )) || (
+                        <a
+                          className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
+                          key={index}
+                          href={`${link}`}
+                        >
+                          {name}
+                        </a>
+                      )
+                  )}
+                </ul>
+              </Fade>
+              <Fade>
+                <ul className="  flex flex-col items-start justify-start ">
+                  <p className="text-red-500 text-lg font-bold">Contact</p>
+                  <a
+                    className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
+                    href="https://t.me"
+                  >
+                    Telegram
+                  </a>
+                  <a
+                    className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
+                    href="https://twitter.com"
+                  >
+                    Twitter
+                  </a>
+                </ul>
               </Fade>
             </div>
           </div>
