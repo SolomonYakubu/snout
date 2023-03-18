@@ -668,6 +668,15 @@ const Home: NextPage = () => {
                     Twitter
                   </a>
                 </ul>
+                <ul>
+                  <p className="text-red-500 text-lg font-bold">E-Mail</p>
+                  <a
+                    className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
+                    href="mailto:snouttoken@gmail.com"
+                  >
+                    snouttoken@gmail.com
+                  </a>
+                </ul>
               </Fade>
             </div>
           </div>
