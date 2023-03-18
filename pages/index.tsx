@@ -61,7 +61,10 @@ const Home: NextPage = () => {
     ["Tokenomics", null],
     ["Roadmap", null],
     ["Uniswap", "https://app.uniswap.org"],
-    ["Dextools", "https://dextools.io"],
+    [
+      "Dextools",
+      "https://www.dextools.io/app/en/ether/pair-explorer/0xc762aed51d7b07d08ee040e2eb4aece5bec4c7f5",
+    ],
   ];
   const roadmap = [
     {
@@ -255,7 +258,8 @@ const Home: NextPage = () => {
 
                   <button
                     onClick={() =>
-                      (window.location.href = "https://www.dextools.io")
+                      (window.location.href =
+                        "https://www.dextools.io/app/en/ether/pair-explorer/0xc762aed51d7b07d08ee040e2eb4aece5bec4c7f5")
                     }
                     className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl  bg-gradient-to-r from-blue-300 to-green-400 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none"
                   >
@@ -277,7 +281,12 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
+        <p className="break-all text-red-500 font-bold text-center p-5 my-7">
+          <span className="text-xl ">Contract Address</span>
+          <br />
+          <br />
+          0xF965148De72a633e16f3A9D72C5ca083593B7F22
+        </p>
         <section
           className="md:min-h-[calc(100vh-64px)] flex flex-col justify-center  pt-16 items-center p-6 md:p-12 md:py-40 w-full bg-[#020873] bg-opacity-5"
           id="About"
