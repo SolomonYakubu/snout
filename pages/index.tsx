@@ -145,7 +145,7 @@ const Home: NextPage = () => {
       icon: <FaCoins size={40} />,
     },
     {
-      title: "Tax - 5/5",
+      title: "Tax - 4/4",
       desc: "The tax charged for both buy and sell transactions is 5%",
       icon: <GiReceiveMoney size={40} />,
     },
@@ -156,7 +156,13 @@ const Home: NextPage = () => {
       icon: <MdPool size={40} />,
     },
     {
-      title: "Marketing - 4%",
+      title: "Marketing - 2%",
+
+      desc: "4% fees directly goes to marketing to support the token in a long run.",
+      icon: <BsShopWindow size={40} />,
+    },
+     {
+      title: "Development - 1%",
 
       desc: "4% fees directly goes to marketing to support the token in a long run.",
       icon: <BsShopWindow size={40} />,
