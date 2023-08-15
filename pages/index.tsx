@@ -259,7 +259,7 @@ const Home: NextPage = () => {
                   <button
                     onClick={() =>
                       (window.location.href =
-                        "https://www.dextools.io/app/en/ether/pair-explorer/0xc762aed51d7b07d08ee040e2eb4aece5bec4c7f5")
+                        "https://www.dextools.io")
                     }
                     className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl  bg-gradient-to-r from-blue-300 to-green-400 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none"
                   >
@@ -285,7 +285,7 @@ const Home: NextPage = () => {
           <span className="text-xl ">Contract Address</span>
           <br />
           <br />
-          0xF965148De72a633e16f3A9D72C5ca083593B7F22
+          0x0000000000000000000000000000000000000000
         </p>
         <section
           className="md:min-h-[calc(100vh-64px)] flex flex-col justify-center  pt-16 items-center p-6 md:p-12 md:py-40 w-full bg-[#020873] bg-opacity-5"
@@ -588,7 +588,7 @@ const Home: NextPage = () => {
                 <div className="flex flex-col md:flex-row  items-center justify-center w-full  gap-2 md:mb-0 my-3 md:my-0 md:mt-6">
                   <button
                     onClick={() =>
-                      (window.location.href = "https://t.me/SnoutToken")
+                      (window.location.href = "https://t.me/SnoutERC")
                     }
                     className="flex items-center justify-between gap-3 font-[Montserrat] font-extrabold text-xl bg-gradient-to-tr from-blue-400 to-blue-900 hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none  "
                   >
