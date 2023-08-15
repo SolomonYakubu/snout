@@ -15,7 +15,7 @@ import logo2 from "../public/images/logo.webp";
 import bg2 from "../public/images/bg2.webp";
 import dot from "../public/images/dot.webp";
 
-// import Snout  from "../public/images/Snout .jpg";
+// import Snt  from "../public/images/Snout .jpg";
 import { Link, animateScroll as scroll } from "react-scroll";
 import ParticlesBg from "../components/particles";
 import p1 from "../public/images/p1.png";
