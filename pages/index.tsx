@@ -396,7 +396,7 @@ const Home: NextPage = () => {
               </div>
               <button
                 onClick={() =>
-                  (window.location.href = "https://t.me/SnoutToken")
+                  (window.location.href = "https://t.me/SnoutERC")
                 }
                 className="flex items-center my-5 justify-between gap-3 animate-pulse font-[Montserrat] font-extrabold text-xl bg-gradient-to-tr from-primary to-secondary hover:scale-105 transition-all  text-white p-4 md:p-5 px-10 rounded-3xl w-fit  border-none   "
               >
@@ -657,7 +657,7 @@ const Home: NextPage = () => {
                   <p className="text-red-500 text-lg font-bold">Contact</p>
                   <a
                     className={`mt-2 pl-2 text-white  m-1 text-center pr-5  `}
-                    href="https://t.me/SnoutToken"
+                    href="https://t.me/SnoutERC"
                   >
                     Telegram
                   </a>
